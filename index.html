@@ -10,26 +10,10 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts.js"></script>
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script>
-        $(document).ready(function() {
-
-            $(window).scroll(function () {
-                //if you hard code, then use console
-                //.log to determine when you want the
-                //nav bar to stick.
-                console.log($(window).scrollTop())
-                if ($(window).scrollTop() > 157) {
-                    $("#nav").addClass('navbar-fixed-top');
-                }
-                if ($(window).scrollTop() < 158) {
-                    $("#nav").removeClass('navbar-fixed-top');
-                }
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -94,58 +78,20 @@
             <hr/>
         </div>
         <div class="col-md-4">
-
-
             <div class="panel panel-default">
                 <!-- Default panel contents -->
-                <div class="panel-heading">Última Jornada</div>
-
-                    <!-- Table -->
-                    <table class="table">
-                    <tr>
-                        <th>V</th>
-                        <th>-</th>
-                        <th>L</th>
-                    </tr>
-                    <tr>
-                        <td>R.Madrid</td>
-                        <td class="result-td">96 - 97</td>
-                        <td>Herbalife GC</td>
-                    </tr>
-                    <tr>
-                        <td>CB Canarias</td>
-                        <td>79 - 66</td>
-                        <td>Baskonia</td>
-                    </tr>
-                    </table>
-
+                <div class="panel-heading">
+                    <div class="btn-group btn-group-justified">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default" id="resultLast1" onclick="toLast(1)">Última Jornada</button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default" id="resultNext1" onclick="toNext(1)">Próxima Jornada</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tablaResult1"></div>
             </div>
-
-            <div class="panel panel-default">
-                <!-- Default panel contents -->
-                <div class="panel-heading">Próxima Jornada</div>
-
-                    <!-- Table -->
-                    <table class="table">
-                        <tr>
-                            <th>V</th>
-                            <th>-</th>
-                            <th>L</th>
-                        </tr>
-                        <tr>
-                            <td>R.Madrid</td>
-                            <td class="result-td">-</td>
-                            <td>Herbalife GC</td>
-                        </tr>
-                        <tr>
-                            <td>CB Canarias</td>
-                            <td>-</td>
-                            <td>Baskonia</td>
-                        </tr>
-                    </table>
-            </div>
-
-
         </div>
     </div>
     <div class="container">
@@ -189,7 +135,22 @@
             </h4>
             <hr/>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">
+                    <div class="btn-group btn-group-justified">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default" id="resultLast2" onclick="toLast(2)">Última Jornada</button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default" id="resultNext2" onclick="toNext(2)">Próxima Jornada</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tablaResult2"></div>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="col-md-4">
@@ -232,7 +193,22 @@
             </h4>
             <hr/>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">
+                    <div class="btn-group btn-group-justified">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default" id="resultLast3" onclick="toLast(3)">Última Jornada</button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default" id="resultNext3" onclick="toNext(3)">Próxima Jornada</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tablaResult3"></div>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="col-md-4">

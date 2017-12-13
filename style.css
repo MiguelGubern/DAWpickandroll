@@ -29,12 +29,14 @@
 #userButton{
     display: none;
 }
-
-#div-footer{
-    background-color: black;
-    color: white;
+.result-td{
+    background-color: darkorange;
 }
 
+#div-footer{
+    background-color: #222222;
+    color: white;
+}
 .a-footer{
     color: white;
 }
