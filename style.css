@@ -21,9 +21,6 @@
     /*color: white;*/
 /*}*/
 
-::after{
-    color: black;
-}
 
 #header{
     background-color: orangered;
@@ -33,6 +30,14 @@
     display: none;
 }
 
+#div-footer{
+    background-color: black;
+    color: white;
+}
+
+.a-footer{
+    color: white;
+}
 img {
     display: block;
     margin: 0 auto;
