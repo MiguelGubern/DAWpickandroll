@@ -1,17 +1,17 @@
 $(window).on("load",function() {
 
-    $(window).scroll(function () {
-        //if you hard code, then use console
-        //.log to determine when you want the
-        //nav bar to stick.
-        console.log($(window).scrollTop())
-        if ($(window).scrollTop() > 157) {
-            $("#nav").addClass('navbar-fixed-top');
-        }
-        if ($(window).scrollTop() < 158) {
-            $("#nav").removeClass('navbar-fixed-top');
-        }
-    });
+    // $(window).scroll(function () {
+    //     //if you hard code, then use console
+    //     //.log to determine when you want the
+    //     //nav bar to stick.
+    //     console.log($(window).scrollTop())
+    //     if ($(window).scrollTop() > 175) {
+    //         $("#nav").addClass('navbar-fixed-top');
+    //     }
+    //     if ($(window).scrollTop() < 200) {
+    //         $("#nav").removeClass('navbar-fixed-top');
+    //     }
+    // });
     toLast(1);
     toLast(2);
     toLast(3);

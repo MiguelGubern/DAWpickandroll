@@ -21,6 +21,15 @@
     /*color: white;*/
 /*}*/
 
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
 
 #header{
     background-color: orangered;
@@ -40,7 +49,42 @@
 .a-footer{
     color: white;
 }
+th{
+    text-align: center;
+}
+
+.panelEquipo{
+    width: 200px;
+    float: left;
+    margin: 5px;
+
+}
+
+iframe{
+    /*border: 2px;*/
+    width: 100%;
+    height: 450px;
+}
+
+.nombreEquipo{
+    margin: 15px;
+}
+
+hr{
+    border-width: 2px;
+}
+
 img {
     display: block;
     margin: 0 auto;
 }
+
+.img-circle{
+    float: left;
+    height: 100%;
+    /*margin-left: 10px;*/
+}
+
+/*div{*/
+    /*border: black 1px solid;*/
+/*}*/

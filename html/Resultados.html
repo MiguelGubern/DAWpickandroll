@@ -4,21 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>pickandroll</title>
-    <link href="img/LogoP&Rnaranja.png" rel="shortcut icon" type="image/png">
+    <link href="../img/LogoP&Rnaranja.png" rel="shortcut icon" type="image/png">
 
-    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <script type="text/javascript" src="scripts.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js" ></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+    <script type="text/javascript" src="../scripts.js"></script>
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <style>
-        .dropdown-menu{
-            width: 100%;
-        }
-    </style>
 
 </head>
 
@@ -26,17 +20,17 @@
 
 <div class="container-fluid" id="header">
     <div class="col-md-12">
-        <img src="img/prueba/LogoP&R.png">
+        <img src="../img/prueba/LogoP&R.png">
     </div>
     <div class="col-md-12">
-        <img src="img/NombreP&R.png" style="margin: 0 auto;">
+        <img src="../img/NombreP&R.png" style="margin: 0 auto;">
     </div>
     <!--<div class="col-md-3" id="userButton">-->
     <!--<button class="btn btn-default" type="button">Button</button>-->
     <!--</div>-->
 </div>
 
-<nav class="navbar navbar-inverse" id="nav">
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="171" id="nav">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -49,7 +43,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li role="presentation"><a href="index.html">Inicio</a></li>
+                <li role="presentation"><a href="../index.html">Inicio</a></li>
                 <li role="presentation"><a href="#">Liga Endesa</a></li>
                 <li role="presentation"><a href="#">Copa del Rey</a></li>
                 <li role="presentation"><a href="#">NBA </a></li>
@@ -62,52 +56,87 @@
                         <li><a href="#">Internacional</a></li>
                         <li><a href="#">Mundial de Federaciones</a></li>
                         <li><a href="#">Amateur</a></li>
-                        <li class="active"><a href="Teams.html">Equipos</a></li>
+                        <li><a href="Teams.html">Equipos</a></li>
                     </ul>
                 </li>
-                <li role="presentation"><a href="#">Resultados </a></li>
+                <li role="presentation"><a href="Resultados.html">Resultados </a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="container">
-    <div class="col-md-6 col-md-offset-3">
-        <div class="dropdown">
-            <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown">
-                Seleccionar Competición
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">NBA</a></li>
-                <li><a href="#">Liga Endesa</a></li>
-                <li><a href="#">Copa del Rey</a></li>
-                <li><a href="#">EuroLeague</a></li>
-                <li><a href="#">EuroCup</a></li>
+<!--Page Content-->
+<div class="col-md-8 col-md-offset-4">
+    <h1>Aqui se filtran las cosas taquicua</h1>
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Ultima jornada</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Liga <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">NBA</a></li>
+                        <li><a href="#">ACB</a></li>
+                        <li><a href="#">FIBA</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fecha <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Hoy</a></li>
+                        <li><a href="#">Ayer</a></li>
+                        <li><a href="#">Mañana</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
 </div>
 
-<hr/>
-
 <div class="container">
-    <div class="col-md-3">
-        <iframe src="teamList.html" height="750" ></iframe>
+    <div class="col-md-9">
+        <h1>los resultados tos bombas</h1>
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Última Jornada</div>
+
+            <!-- Table -->
+            <table class="table">
+                <tr>
+                    <th>V</th>
+                    <th>-</th>
+                    <th>L</th>
+                </tr>
+                <tr>
+                    <td>R.Madrid</td>
+                    <td class="result-td">96 - 97</td>
+                    <td>Herbalife GC</td>
+                </tr>
+                <tr>
+                    <td>CB Canarias</td>
+                    <td>79 - 66</td>
+                    <td>Baskonia</td>
+                </tr>
+            </table>
+
+        </div>
     </div>
-    <div class="col-md-9" style="border: 1px solid black; height: 100px; margin-left: 30px;">
+    <div class="col-md-3">
+        <h1 class="text-nowrap text-center">Sugerencias</h1>
+        <a href="#">Articulo1</a><br>
+        <a href="#">Articulo2</a><br>
+        <a href="#">Articulo3</a><br>
+        <a href="#">Articulo4</a><br>
+        <a href="#">Articulo5</a><br>
     </div>
 </div>
-
-
-
 
 <div class="container-fluid" id="div-footer">
     <footer>
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="#" class="a-footer">Contacto</a>
+                    <a href="Contacto.html" class="a-footer">Contacto</a>
                 </div>
                 <div class="col-md-3">
                     <a href="#" class="a-footer">Aviso legal</a>
