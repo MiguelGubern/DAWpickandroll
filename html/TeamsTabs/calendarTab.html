@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pickandroll</title>
+    <link href="../../img/LogoP&Rnaranja.png" rel="shortcut icon" type="image/png">
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js" ></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../style.css" rel="stylesheet">
+    <script type="text/javascript" src="../../scripts.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            padding: 10px;
+        }
+        .container-fluid{
+            margin-top: 10px;
+        }
+
+        .partido{
+            height: 100px;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            height: 100%;
+            float: left;
+        }
+        .liga{
+            margin: 25px;
+            height: 50%;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#proximos').hide();
+        });
+        function proximos() {
+            $('#jugados').hide();
+            $('#proximos').show();
+        }
+        function jugados() {
+            $('#proximos').hide();
+            $('#jugados').show();
+        }
+    </script>
+
+</head>
+<body>
+<div id="jugados">
+
+    <div class="container">
+        <div class="col-sm-3 col-sm-offset-3">
+            <button type="button" class="btn btn-default" onclick="jugados()">Partidos Jugados</button>
+        </div>
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-default" onclick="proximos()">Partidos Próximos</button>
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="container-fluid">
+        <div class="col-sm-2 col-xs-6 partido">
+            <img class="liga" src="../../img/logoEurocup.png" alt="">
+        </div>
+        <div class="col-sm-2 col-xs-6 partido">
+            <h3 class="text-center">16 de Diciembre de 2017</h3>
+        </div>
+        <div class="col-sm-8 col-xs-12 partido">
+            <div class="col-sm-2 partido">
+                <img src="../../img/LogoHerbalife.png" alt="">
+            </div>
+            <div class="col-sm-3 partido">
+                <h3 class="text-center">Herbalife Gran Canaria</h3>
+            </div>
+            <div class="col-sm-2 partido">
+                <h3 class="text-center">93 - 79</h3>
+            </div>
+            <div class="col-sm-3 partido">
+                <h3 class="text-center">Dolomiti Energica Trento</h3>
+            </div>
+            <div class="col-sm-2 partido">
+                <img src="../../img/logoTrento.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="container-fluid">
+        <div class="col-sm-2 col-xs-6 partido">
+            <img class="liga" src="../../img/logoLigaEndesa.png" alt="">
+        </div>
+        <div class="col-sm-2 col-xs-6 partido">
+            <h3 class="text-center">10 de Diciembre de 2017</h3>
+        </div>
+        <div class="col-sm-8 col-xs-12 partido">
+            <div class="col-sm-2 partido">
+                <img src="../../img/logoBarcelona.png" alt="">
+            </div>
+            <div class="col-sm-3 partido">
+                <h3 class="text-center">F.C. Barcelona</h3>
+            </div>
+            <div class="col-sm-2 partido">
+                <h3 class="text-center">93 - 79</h3>
+            </div>
+            <div class="col-sm-3 partido">
+                <h3 class="text-center">Herbalife Gran Canaria</h3>
+            </div>
+            <div class="col-sm-2 partido">
+                <img src="../../img/LogoHerbalife.png" alt="">
+            </div>
+        </div>
+    </div>
+    <hr/>
+</div>
+
+<div id="proximos">
+
+    <div class="container">
+        <div class="col-sm-3 col-sm-offset-3">
+            <button type="button" class="btn btn-default" onclick="jugados()">Partidos Jugados</button>
+        </div>
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-default" onclick="proximos()">Partidos Próximos</button>
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="container-fluid">
+        <div class="col-sm-2 col-xs-6 partido">
+            <img class="liga" src="../../img/logoLigaEndesa.png" alt="">
+        </div>
+        <div class="col-sm-2 col-xs-6 partido">
+            <h3 class="text-center">27 de Diciembre de 2017</h3>
+        </div>
+        <div class="col-sm-8 col-xs-12 partido">
+            <div class="col-sm-2 partido">
+                <img src="../../img/logoBarcelona.png" alt="">
+            </div>
+            <div class="col-sm-3 partido">
+                <h3 class="text-center">F.C. Barcelona</h3>
+            </div>
+            <div class="col-sm-2 partido">
+                <h1 class="text-center">VS</h1>
+            </div>
+            <div class="col-sm-3 partido">
+                <h3 class="text-center">Herbalife Gran Canaria</h3>
+            </div>
+            <div class="col-sm-2 partido">
+                <img src="../../img/LogoHerbalife.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="container-fluid">
+        <div class="col-sm-2 col-xs-6 partido">
+            <img class="liga" src="../../img/logoEurocup.png" alt="">
+        </div>
+        <div class="col-sm-2 col-xs-6 partido">
+            <h3 class="text-center">3 de Enero de 2018</h3>
+        </div>
+        <div class="col-sm-8 col-xs-12 partido">
+            <div class="col-sm-2 partido">
+                <img src="../../img/LogoHerbalife.png" alt="">
+            </div>
+            <div class="col-sm-3 partido">
+                <h3 class="text-center">Herbalife Gran Canaria</h3>
+            </div>
+            <div class="col-sm-2 partido">
+                <h1 class="text-center">VS</h1>
+            </div>
+            <div class="col-sm-3 partido">
+                <h3 class="text-center">Dolomiti Energica Trento</h3>
+            </div>
+            <div class="col-sm-2 partido">
+                <img src="../../img/logoTrento.png" alt="">
+            </div>
+        </div>
+    </div>
+    <hr/>
+</div>
+
+
+</body>
+</html>
