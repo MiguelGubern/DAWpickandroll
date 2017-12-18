@@ -14,6 +14,49 @@
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+    <script>
+        $(document).ready(function(){
+            var date_input=$('input[name="date"]'); //our date input has the name "date"
+            var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+            date_input.datepicker({
+                format: 'mm/dd/yyyy',
+                container: container,
+                todayHighlight: true,
+                autoclose: true,
+            })
+            cargarSugerencias();
+        })
+    </script>
+
+    <style>
+        .partido{
+            height: 70px;
+        }
+
+        .imgResultado{
+            display: block;
+            margin: 0 auto;
+            height: 100%;
+            float: left;
+        }
+
+        .formulario{
+            width: 40%;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .resultados{
+            clear: both;
+            margin-bottom: 20px;
+         }
+
+    </style>
+
 </head>
 
 <body>
@@ -65,70 +108,97 @@
     </div>
 </nav>
 
-<!--Page Content-->
-<div class="col-md-8 col-md-offset-4">
-    <h1>Aqui se filtran las cosas taquicua</h1>
-    <div class="container">
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Ultima jornada</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Liga <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">NBA</a></li>
-                        <li><a href="#">ACB</a></li>
-                        <li><a href="#">FIBA</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fecha <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Hoy</a></li>
-                        <li><a href="#">Ayer</a></li>
-                        <li><a href="#">Mañana</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+<div class="container">
+    <div class="col-md-8">
+        <h3 class="lead">Seleciona una competición y una fecha</h3>
+        <form>
+            <div class="form-group formulario" id="competicion">
+                <select class="form-control">
+                    <option>Seleciona una competición</option>
+                    <option>NBA</option>
+                    <option>Liga Endesa</option>
+                    <option>EuroCup</option>
+                    <option>EuroLeague</option>
+                </select>
+            </div>
+            <div class="input-group formulario" id="fecha">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text"/>
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+            </div>
+        </form>
     </div>
+    <hr/>
 </div>
 
 <div class="container">
     <div class="col-md-9">
-        <h1>los resultados tos bombas</h1>
-        <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading">Última Jornada</div>
+        <div class="container-fluid resultados">
+            <div class="col-sm-2 partido">
+                <img src="../img/logoBarcelona.png" class="imgResultado" alt="">
+            </div>
+            <div class="col-sm-3 partido">
+                <h4 class="text-center">F.C. Barcelona</h4>
+            </div>
+            <div class="col-sm-2 partido">
+                <h3 class="text-center">86 - 87</h3>
+            </div>
+            <div class="col-sm-3 partido">
+                <h4 class="text-center">Herbalife Gran Canaria</h4>
+            </div>
+            <div class="col-sm-2 partido">
+                <img src="../img/LogoHerbalife.png" class="imgResultado" alt="">
+            </div>
+        </div>
 
-            <!-- Table -->
-            <table class="table">
-                <tr>
-                    <th>V</th>
-                    <th>-</th>
-                    <th>L</th>
-                </tr>
-                <tr>
-                    <td>R.Madrid</td>
-                    <td class="result-td">96 - 97</td>
-                    <td>Herbalife GC</td>
-                </tr>
-                <tr>
-                    <td>CB Canarias</td>
-                    <td>79 - 66</td>
-                    <td>Baskonia</td>
-                </tr>
-            </table>
+        <hr/>
 
+        <div class="container-fluid resultados">
+            <div class="col-sm-2 partido">
+                <img src="../img/logoTrento.png" class="imgResultado" alt="">
+            </div>
+            <div class="col-sm-3 partido">
+                <h4 class="text-center">F.C. Barcelona</h4>
+            </div>
+            <div class="col-sm-2 partido">
+                <h3 class="text-center">86 - 87</h3>
+            </div>
+            <div class="col-sm-3 partido">
+                <h4 class="text-center">Herbalife Gran Canaria</h4>
+            </div>
+            <div class="col-sm-2 partido">
+                <img src="../img/LogoHerbalife.png" class="imgResultado" alt="">
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="container-fluid resultados">
+            <div class="col-sm-2 partido">
+                <img src="../img/logoBarcelona.png" class="imgResultado" alt="">
+            </div>
+            <div class="col-sm-3 partido">
+                <h4 class="text-center">F.C. Barcelona</h4>
+            </div>
+            <div class="col-sm-2 partido">
+                <h3 class="text-center">86 - 87</h3>
+            </div>
+            <div class="col-sm-3 partido">
+                <h4 class="text-center">Herbalife Gran Canaria</h4>
+            </div>
+            <div class="col-sm-2 partido">
+                <img src="../img/logoTrento.png" class="imgResultado" alt="">
+            </div>
         </div>
     </div>
+
     <div class="col-md-3">
-        <h1 class="text-nowrap text-center">Sugerencias</h1>
-        <a href="#">Articulo1</a><br>
-        <a href="#">Articulo2</a><br>
-        <a href="#">Articulo3</a><br>
-        <a href="#">Articulo4</a><br>
-        <a href="#">Articulo5</a><br>
+        <div id="añadirArticulos"></div>
+        <button type="button" onclick="cargarSugerencias();" class="btn btn-default">Ver más sugerencias</button>
     </div>
+
 </div>
 
 <div class="container-fluid" id="div-footer">

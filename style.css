@@ -63,7 +63,7 @@ th{
 iframe{
     /*border: 2px;*/
     width: 100%;
-    height: 450px;
+    height: 600px;
 }
 
 .nombreEquipo{
@@ -72,6 +72,7 @@ iframe{
 
 hr{
     border-width: 2px;
+    clear: both;
 }
 
 img {
