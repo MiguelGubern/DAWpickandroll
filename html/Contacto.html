@@ -23,7 +23,7 @@
         <img src="../img/prueba/LogoP&R.png">
     </div>
     <div class="col-md-12">
-        <img src="../img/NombreP&R.png" style="margin: 0 auto;">
+        <img src="../img/NombreP&R.png" id="colHeader">
     </div>
     <!--<div class="col-md-3" id="userButton">-->
     <!--<button class="btn btn-default" type="button">Button</button>-->
@@ -82,7 +82,7 @@
             <input type="text" name="Asunto" id="Asunto" placeholder="Asunto">
             <br><br>
             <label for="Nombre">Introduce tu mensaje:</label>
-            <textarea style="width: 100%; height: 100px;" id="mensaje" placeholder="Mensaje"></textarea><br>
+            <textarea id="mensaje" placeholder="Mensaje"></textarea><br>
             <br>
             <input type="submit" value="¡Contáctanos!" onclick="enviar()">
         </form>
@@ -106,7 +106,7 @@
         <button type="button" class="btn btn-info">¿Desea leer más preguntas?</button>
     </div>
     <div class="col-md-3">
-        <div id="googleMap" style="width:100%;height:300px;"></div>
+        <div id="googleMap"></div>
         Fax: 9123914815
         <br>
         TLF: 1231391414
@@ -142,7 +142,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-2" style="margin-right: 10%">
+                <div class="col-md-4 col-md-offset-2" class="colFooter">
                     <a href="#" class="a-footer">Publicidad</a>
                 </div>
                 <div class="col-md-4">
