@@ -1,26 +1,3 @@
-
-/*html {*/
-    /*position: relative;*/
-    /*min-height: 100%;*/
-/*}*/
-/*body {*/
-    /*!* Margin bottom by footer height *!*/
-    /*margin-bottom: 60px;*/
-/*}*/
-/*.footer {*/
-    /*position: absolute;*/
-
-    /*bottom: 0;*/
-    /*width: 100%;*/
-    /*!* Set the fixed height of the footer here *!*/
-    /*!*height: 60px;*!*/
-    /*background-color: gray;*/
-/*}*/
-
-/*.footer a {*/
-    /*color: white;*/
-/*}*/
-
 .affix {
     top: 0;
     width: 100%;
@@ -61,7 +38,6 @@ th{
 }
 
 iframe{
-    /*border: 2px;*/
     width: 100%;
     height: 600px;
 }
@@ -83,9 +59,47 @@ img {
 .img-circle{
     float: left;
     height: 100%;
-    /*margin-left: 10px;*/
 }
 
-/*div{*/
-    /*border: black 1px solid;*/
-/*}*/
+.colHeader {
+    margin: 0 auto;
+}
+
+.tablaResult1 {
+    text-align: center;
+}
+
+#Imagen {
+    width: 100%;
+    height: 100%;
+}
+
+.colFooter {
+    margin-right: 10%;
+}
+
+#media-object {
+    width: 60px;
+}
+
+.comment {
+    width: 100%;
+}
+
+.mensaje {
+    width: 100%;
+    heigth: 100%;
+}
+
+.googleMap {
+    width: 100%;
+    height: 300px;
+}
+
+.buttonTeam {
+    width: 100%;
+}
+
+.modalTeam {
+    overflow: auto;
+}
